@@ -17,16 +17,15 @@ Our algorithm is mainly based on the concept of modified
  SQRT, DIVIDE, INNER_PRODUCT (not in the PROC4),
  PROJECTION.
  First, in SQUARE and SQRT, the norm of h<sub>1</sub><sup>0</sup>, h<sub>2</sub><sup>1</sup>, h<sub>3</sub><sup>2</sup>, h<sub>4</sub><sup>3</sup>,
- namely R11, R22, R33, R44, is computed for each process, respectively.
+ namely R<sub>11</sub>, R<sub>22</sub>, R<sub>33</sub>, R<sub>44</sub>, is computed for each process, respectively.
  Next, in DIVIDE, e1, e2, e3, e4 is computed for each process,
  respectively. Then, in INNER_PRODUCT, R12, R13, R14 is computed
- for PROC1, R23, R24, ŷ1 
-for PROC2, and R34, ŷ3 
+ for PROC1, R<sub>23</sub>, R<sub>24</sub>, ŷ<sub>1</sub> 
+for PROC2, and R<sub>34</sub>, ŷ<sub>3</sub> 
 for PROC3. At last,
  in PROJECTION, h<sub>2</sub><sup>1</sup>, h<sub>3</sub><sup>1</sup>, h<sub>4</sub><sup>1</sup> is computed for PROC1, h<sub>3</sub><sup>2</sup>, h<sub>4</sub><sup>3</sup>,
  ŷ2 
-for PROC2, h4
- (3)for PROC3, and ŷ3 
+for PROC2, h<sub>4</sub><sup>3</sup>for PROC3, and ŷ<sub>3</sub>
 for PROC4.
  The adjustment we make to modified Gram-Schmidt is that we
  separate the computation of 4 elements of ŷ into different stages and
