@@ -10,10 +10,12 @@ MIMO(multiple input, multiple output) is an antenna technology for wireless comm
  the picture of our algorithm flow shown below, we have PROC1, PROC2, PROC3, PROC4, and in each process, we have SQUARE, SQRT, DIVIDE, INNER_PRODUCT (not in the PROC4), PROJECTION.
  
  First, in SQUARE and SQRT, the norm of **h<sub>1</sub><sup>0</sup>**, **h<sub>2</sub><sup>1</sup>**, **h<sub>3</sub><sup>2</sup>**, **h<sub>4</sub><sup>3</sup>**,
- namely **R<sub>11</sub>**, **R<sub>22</sub>**, **R<sub>33</sub>**, **R<sub>44</sub>**, is computed for each process, respectively.\n
+ namely **R<sub>11</sub>**, **R<sub>22</sub>**, **R<sub>33</sub>**, **R<sub>44</sub>**, is computed for each process, respectively.
+
  Next, in DIVIDE, **e<sub>1</sub>**, **e<sub>2</sub>**, **e<sub>3</sub>**, **e<sub>4</sub>** is computed for each process,
  respectively. Then, in INNER_PRODUCT, **R<sub>12</sub>**, **R<sub>13</sub>**, **R<sub>14</sub>** is computed
- for PROC1, **R<sub>23</sub>**, **R<sub>24</sub>**, **ŷ<sub>1</sub>** for PROC2, and **R<sub>34</sub>**, **ŷ<sub>3</sub>** for PROC3.\n
+ for PROC1, **R<sub>23</sub>**, **R<sub>24</sub>**, **ŷ<sub>1</sub>** for PROC2, and **R<sub>34</sub>**, **ŷ<sub>3</sub>** for PROC3.
+ 
  At last,
  in PROJECTION, **h<sub>2</sub><sup>1</sup>**, **h<sub>3</sub><sup>1</sup>**, **h<sub>4</sub><sup>1</sup>** is computed for PROC1, **h<sub>3</sub><sup>2</sup>**, **h<sub>4</sub><sup>3</sup>**,
  ŷ2 
